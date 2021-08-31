@@ -1,0 +1,14 @@
+#- hosts: MachineWorker
+#  become: yes
+#  roles:
+#        -  rolemaster
+
+#- hosts: MachineMaster
+#  become: yes
+#  roles:
+#        -  master 
+
+- hosts: MachineWorker
+  become: yes
+  roles: 
+        -  worker
